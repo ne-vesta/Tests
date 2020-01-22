@@ -1,34 +1,25 @@
 <head>
-<link href="style.css" rel="stylesheet" type="text/css">
-<script src="script3.js" type="text/javascript" defer></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="script.js" type="text/javascript" defer></script>
 </head>
 <body>
-
-
-<div class="flex">
-    <canvas id="canvas" width="150" height="150"></canvas>
+    <div class="flex">
+        <canvas id="canvas" width="150" height="150"></canvas>
     </div>
-    <div class="color">
-    
-
-    <label for="color" class="color">Настройки цвета</label>
-    <input type="range" min="1" max="5" value="5" id='color'>
-    <span id="resultColor">black</span>
-    </div>
-    css
-    <label class="switch">
+    <div class="right">
+      <div class="color slidecontainer">
+        <p>Настройки цвета</p>
+        <label for="color" class="color"></label>
+        <input type="range" min="1" max="15" value="7" id='color' class="slider_color" id="myRange">
+        <p id="resultColor">DarkBlue</p>
+      </div>
+    <div class="clear"></div>
+    <div class="rotate">
+      <p>Крутись туда-сюда</p>
+      <label class="switch">
         <input type="checkbox" id="rotate_css">
         <span class="slider"></span>
-    </label>
-
-
-
-
-
-
-
-
-
-
-
+      </label>
+    </div>
+  </div>
 </body>
